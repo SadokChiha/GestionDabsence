@@ -9,11 +9,13 @@ import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
 import tn.iit.ws.controle_enseignant.entities.Pointage;
+
 @Repository
 public interface PointageRepository extends JpaRepository<Pointage, Integer> {
-	 @Query("select ex from Pointage ex where ex.idEnseignement.enseignant.id= :id")
-	  abstract List<Pointage> findPointageEns(@Param("id") int id);
-	 
-	 @Query("select ex from Pointage ex")
-	  abstract List<Pointage> findPointageDate(String date);
+	@Query("select ex from Pointage ex where ex.idEnseignement.enseignant.id= :id")
+	abstract List<Pointage> findPointageEns(@Param("id") int id);
+
+	@Query("select ex from Pointage ex")
+	abstract List<Pointage> findPointageDate(String date);
+
 }

@@ -19,4 +19,5 @@ public class SeanceController extends CrudController<Seance, Integer> {
 		return seanceService;
 	}
 
+	
 }

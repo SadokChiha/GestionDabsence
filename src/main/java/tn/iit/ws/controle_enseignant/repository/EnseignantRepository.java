@@ -7,4 +7,5 @@ import tn.iit.ws.controle_enseignant.entities.Enseignant;
 @Repository
 public interface EnseignantRepository extends JpaRepository<Enseignant, Integer> {
 
+	
 }

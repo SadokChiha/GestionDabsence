@@ -7,4 +7,5 @@ import tn.iit.ws.controle_enseignant.entities.Departement;
 @Repository
 public interface DepartementRepository extends JpaRepository<Departement, Integer>{
 
+	
 }

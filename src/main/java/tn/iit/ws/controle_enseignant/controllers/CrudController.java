@@ -24,6 +24,7 @@ public abstract class CrudController<T,V> {
 	@CrossOrigin(origins = "http://localhost:8100")
 	public List<T> listEntity() {
 		return getService().findAll();
+		
 	}
 
 	@RequestMapping(value = "{id}", method = RequestMethod.GET)

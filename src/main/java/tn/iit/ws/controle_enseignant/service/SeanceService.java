@@ -17,3 +17,4 @@ public class SeanceService extends CrudService<Seance, Integer> {
 		return seanceRepository;
 	}
 }
+

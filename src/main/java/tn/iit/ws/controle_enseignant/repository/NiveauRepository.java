@@ -7,4 +7,5 @@ import tn.iit.ws.controle_enseignant.entities.Niveau;
 @Repository
 public interface NiveauRepository extends JpaRepository<Niveau, Integer> {
 
+	
 }

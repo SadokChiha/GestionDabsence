@@ -19,4 +19,5 @@ public class DepartementController extends CrudController<Departement, Integer> 
 		return departementService;
 	}
 
+	
 }

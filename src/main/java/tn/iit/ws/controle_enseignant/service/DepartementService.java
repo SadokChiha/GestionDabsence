@@ -16,4 +16,5 @@ public class DepartementService extends CrudService<Departement, Integer> {
 	protected JpaRepository<Departement, Integer> getRepository() {
 		return departementRepository;
 	}
+	
 }

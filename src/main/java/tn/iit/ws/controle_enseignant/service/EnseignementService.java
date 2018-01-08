@@ -22,4 +22,5 @@ public class EnseignementService extends CrudService<Enseignement, Integer> {
 		return enseignementRepository.findEnsByDate();
 	}
 	
+	
 }

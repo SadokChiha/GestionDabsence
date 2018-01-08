@@ -16,4 +16,5 @@ public class NiveauService extends CrudService<Niveau, Integer> {
 	protected JpaRepository<Niveau, Integer> getRepository() {
 		return niveauRepository;
 	}
+	
 }

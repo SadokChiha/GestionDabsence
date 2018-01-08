@@ -30,6 +30,7 @@ public class PointageController extends CrudController<Pointage, Integer> {
 	protected CrudService<Pointage, Integer> getService() {
 		return pointageService;
 	}
+
 	@RequestMapping(value = "/enseignant/{id}", method = RequestMethod.GET, produces = "application/json; charset=utf-8")
 	@ResponseBody
 	@CrossOrigin(origins = "http://localhost:4200")

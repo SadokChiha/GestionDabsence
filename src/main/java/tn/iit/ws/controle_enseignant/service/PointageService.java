@@ -20,9 +20,11 @@ public class PointageService extends CrudService<Pointage, Integer> {
 	protected JpaRepository<Pointage, Integer> getRepository() {
 		return pointageRepository;
 	}
-	public List<Pointage> findPointageEns(int id){
+
+	public List<Pointage> findPointageEns(int id) {
 		return pointageRepository.findPointageEns(id);
 	}
+
 	public List<Pointage> findPointageDate(String date) {
 		return pointageRepository.findPointageDate(date);
 	}

@@ -16,4 +16,5 @@ public class EnseignantService extends CrudService<Enseignant, Integer> {
 	protected JpaRepository<Enseignant, Integer> getRepository() {
 		return enseignantRepository;
 	}
+	
 }

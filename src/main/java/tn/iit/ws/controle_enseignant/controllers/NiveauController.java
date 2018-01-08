@@ -19,4 +19,5 @@ public class NiveauController extends CrudController<Niveau, Integer> {
 		return niveauService;
 	}
 
+	
 }

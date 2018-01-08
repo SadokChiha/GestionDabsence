@@ -7,4 +7,5 @@ import tn.iit.ws.controle_enseignant.entities.Salle;
 @Repository
 public interface SalleRepository extends JpaRepository<Salle, Integer> {
 
+	
 }

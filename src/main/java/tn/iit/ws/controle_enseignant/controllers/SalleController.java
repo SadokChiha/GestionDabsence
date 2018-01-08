@@ -19,4 +19,5 @@ public class SalleController extends CrudController<Salle, Integer> {
 		return salleService;
 	}
 
+	
 }

@@ -16,4 +16,5 @@ public class SalleService extends CrudService<Salle, Integer> {
 	protected JpaRepository<Salle, Integer> getRepository() {
 		return salleRepository;
 	}
+	
 }

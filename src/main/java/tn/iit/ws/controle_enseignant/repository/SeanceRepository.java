@@ -7,4 +7,6 @@ import tn.iit.ws.controle_enseignant.entities.Seance;
 @Repository
 public interface SeanceRepository extends JpaRepository<Seance, Integer> {
 
+	
+	
 }

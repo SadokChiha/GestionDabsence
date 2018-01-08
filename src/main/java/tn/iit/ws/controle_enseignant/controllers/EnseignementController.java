@@ -52,6 +52,7 @@ public class EnseignementController extends CrudController<Enseignement, Integer
 				System.out.println(output);
 				if (output.equals("" + localDate))
 					l.add(all.get(i));
+				
 			} catch (ParseException e) {
 				e.printStackTrace();
 			}
