@@ -47,7 +47,7 @@ public abstract class CrudService<T, V> {
 	}
 
 	public boolean existsById(V id) {
-		return getRepository().existsById(id);
+		return existsById(id);
 	}
 
 	public List<T> findAll() {

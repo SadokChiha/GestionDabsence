@@ -1,5 +1,7 @@
 package tn.iit.ws.controle_enseignant.service;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Service;
@@ -16,4 +18,8 @@ public class EnseignementService extends CrudService<Enseignement, Integer> {
 	protected JpaRepository<Enseignement, Integer> getRepository() {
 		return enseignementRepository;
 	}
+	public List<Enseignement> findEnsByDate(){
+		return enseignementRepository.findEnsByDate();
+	}
+	
 }
