@@ -28,6 +28,16 @@ public class Pointage {
 	@ManyToOne
 	@JoinColumn(name = "idEnseignement")
 	private Enseignement idEnseignement;
+	@Column
+	private String absent;
+
+	public String getAbsent() {
+		return absent;
+	}
+
+	public void setAbsent(String absent) {
+		this.absent = absent;
+	}
 
 	public Integer getId() {
 		return id;
