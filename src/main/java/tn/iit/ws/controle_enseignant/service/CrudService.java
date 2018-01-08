@@ -46,9 +46,6 @@ public abstract class CrudService<T, V> {
 				String.format("%s,%s,%s", ExceptionCodes.ID_NOT_EXISTANT, entity.getClass(), getIdOfEntity(entity)));
 	}
 
-	public boolean existsById(V id) {
-		return existsById(id);
-	}
 
 	public List<T> findAll() {
 		return getRepository().findAll();
@@ -85,5 +82,9 @@ public abstract class CrudService<T, V> {
 				}
 			}
 		}
+	}
+	
+	public boolean existsById(V id) {
+		return getRepository().existsById(id);
 	}
 }
